@@ -1,0 +1,262 @@
+:root {
+    --bs-primary: #B85154; /* Warna Primary */
+    --bs-secondary: #F04F54; /* Warna Secondary */
+}
+/* Terapkan Font Oswald ke Seluruh Website */
+body {
+    font-family: 'Oswald', sans-serif;
+}
+/* Header Sticky */
+header {
+    position: sticky; /* Sticky header */
+    top: 0; /* Menempel di bagian atas halaman */
+    z-index: 1000; /* Agar berada di atas elemen lain */
+    background-color: white; /* Latar belakang untuk header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan agar terlihat seperti melayang */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+header.sticky {
+    background-color: #f8f9fa; /* Latar belakang lebih terang saat sticky */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas */
+}
+
+
+/* Opsional: Variasi untuk Heading */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Sedikit lebih tebal untuk heading */
+}
+
+/* Elemen Teks Khusus */
+p, button, input, textarea {
+    font-weight: 400; /* Berat normal untuk paragraf dan input */
+}
+/* Section Hero dengan Background Gambar */
+#hero {
+    background-image: url('hero.jpg'); /* Path gambar */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Fokus pada bagian tengah gambar */
+    background-repeat: no-repeat; /* Tidak mengulangi gambar */
+    height: 100vh; /* Mengatur tinggi section hero */
+    display: flex; /* Untuk membuat konten berada di tengah */
+    justify-content: center; /* Konten horizontal di tengah */
+    align-items: center; /* Konten vertikal di tengah */
+    color: white; /* Warna teks putih agar kontras */
+    text-align: center; /* Teks rata tengah */
+}
+#hero h1 {
+    font-size: 3rem; /* Ukuran heading besar */
+    font-weight: 700; /* Teks tebal */
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 1.2rem; /* Ukuran teks deskripsi */
+    margin-bottom: 30px;
+}
+#hero .btn-primary {
+    background-color: #B85154; /* Warna primary */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+#hero .btn-primary:hover {
+    background-color: #F04F54; /* Warna secondary saat hover */
+}
+
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+
+/* Efek hover untuk link di navbar */
+.navbar-nav .nav-link {
+    color: var(--bs-primary); /* Warna default link */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Warna teks saat hover */
+    background-color: var(--bs-primary); /* Warna latar belakang saat hover */
+    border-radius: 5px; /* Membuat sudut rounded */
+    padding: 5px 10px; /* Memberikan ruang di sekitar teks */
+}
+#how-it-works .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#how-it-works .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+#about {
+    background-color: #f9f9f9; /* Warna latar terang */
+}
+#about h2 {
+    color: #B85154; /* Sesuaikan dengan warna primary */
+}
+#about .btn-primary {
+    background-color: #B85154;
+    border: none;
+}
+#about .btn-primary:hover {
+    background-color: #F04F54; /* Warna secondary saat hover */
+}
+#contact .form-control {
+    border: 1px solid #B85154; /* Warna border primary */
+}
+#contact .btn-primary {
+    background-color: #B85154;
+    border: none;
+}
+#contact .btn-primary:hover {
+    background-color: #F04F54; /* Warna secondary saat hover */
+}
+#contact a.text-secondary:hover {
+    color: #B85154;
+}
+.card-body img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #B85154; /* Sesuaikan dengan warna primary */
+}
+.card-body p.fw-bold {
+    color: #F04F54; /* Sesuaikan dengan warna secondary */
+}
+/* Warna Latar dan Heading Section Produk */
+#products {
+    background-color: #f9f9f9; /* Warna latar terang */
+    padding: 60px 0;
+}
+#products h2 {
+    color: #B85154; /* Primary Color */
+    font-weight: bold;
+}
+#products p {
+    color: #666; /* Warna teks deskripsi */
+}
+
+/* Card Produk */
+#products .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#products .card:hover {
+    transform: translateY(-5px); /* Efek hover naik */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas */
+}
+
+/* Header Card (Gambar) */
+#products .card img {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Konten Card */
+#products .card-body h5 {
+    color: #B85154; /* Primary Color */
+    font-weight: bold;
+}
+#products .card-body p {
+    color: #777; /* Warna teks deskripsi */
+    font-size: 14px;
+}
+
+/* Harga Produk */
+#products .card .price {
+    color: #F04F54; /* Secondary Color */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Tombol Detail */
+#products .card .btn-primary {
+    background-color: #B85154;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#products .card .btn-primary:hover {
+    background-color: #F04F54; /* Secondary Color */
+}
+/* Modal Background */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan modal */
+}
+
+/* Header Modal */
+.modal-header {
+    background-color: #B85154; /* Primary Color */
+    color: white; /* Teks putih */
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+.modal-header .btn-close {
+    background-color: white; /* Tombol close putih */
+    border-radius: 50%;
+    opacity: 1;
+}
+.modal-header .btn-close:hover {
+    background-color: #F04F54; /* Secondary Color saat hover */
+}
+
+/* Body Modal */
+.modal-body {
+    padding: 20px;
+    color: #333; /* Warna teks utama */
+}
+.modal-body h5 {
+    color: #B85154; /* Primary Color */
+    font-weight: bold;
+}
+.modal-body p {
+    color: #555; /* Warna teks deskripsi */
+    margin-bottom: 15px;
+}
+.modal-body .price {
+    color: #F04F54; /* Secondary Color */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer Modal */
+.modal-footer {
+    background-color: #f9f9f9; /* Latar terang */
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+.modal-footer .btn-primary {
+    background-color: #B85154; /* Primary Color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.modal-footer .btn-primary:hover {
+    background-color: #F04F54; /* Secondary Color */
+}
+.modal-footer .btn-secondary {
+    background-color: #ccc; /* Tombol batal netral */
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.modal-footer .btn-secondary:hover {
+    background-color: #aaa; /* Efek hover tombol batal */
+}
